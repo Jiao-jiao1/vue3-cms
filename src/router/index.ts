@@ -10,17 +10,17 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: () => import('../views/Home.vue'), // 懒加载 Home 组件
   },
   {
     path: '/about',
     name: 'About',
-    component: About,
+    component: () => import('../views/About.vue'), // 懒加载 About 组件
   },
   {
-    path: '/user/:id', // 动态路由
+    path: '/user/:id',
     name: 'UserProfile',
-    component: UserProfile,
+    component: () => import('../views/UserProfile.vue'), // 懒加载 UserProfile 组件
   },
 ]
 
