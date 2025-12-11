@@ -10,7 +10,7 @@ Learn more about the recommended Project Setup and IDE Support in the [Vue Docs 
 1. 克隆项目
 
 ```bash
-git 
+git clone git@github.com:Jiao-jiao1/vue3-cms.git
 ```
 
 2. 安装依赖
