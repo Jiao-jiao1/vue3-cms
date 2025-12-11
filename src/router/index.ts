@@ -24,4 +24,22 @@ const router = createRouter({
   routes,
 })
 
+// 全局路由守卫
+/**
+ * beforeEach：这个钩子函数会在每次路由跳转之前执行。它接收三个参数：
+ * to：即将进入的路由对象
+ * from：当前路由对象
+ * next：放行路由跳转。如果判断条件满足，可以跳转到别的页面。
+ * 调用 next() 表示继续，调用 next(false) 表示中断跳转。
+ * */
+router.beforeEach((to, from, next) => {
+  const isLoggedIn = false // 这里模拟登录状态
+  if (to.name === 'About' && !isLoggedIn) {
+    // 如果没有登录且尝试访问 About 页面，重定向到首页
+    next('/')
+  } else {
+    next() // 放行，继续路由跳转
+  }
+})
+
 export default router
