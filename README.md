@@ -1,26 +1,62 @@
-# Vue 3 + TypeScript + Vite
+# Vue3 CMS Admin
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+一个基于 **Vue3 + TypeScript + Vite** 构建的现代后台管理系统（进行中）。  
+本项目用于提升个人前端综合能力，包括工程化、组件设计、状态管理、路由体系等内容。
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
 
+---
 
-## 本地运行
+## 🔥 技术栈（Tech Stack）
 
-1. 克隆项目
+- **Vue 3**（Composition API）
+- **TypeScript**
+- **Vite**
+- **Vue Router**
+- **Pinia**
+- **ESLint + Prettier**（代码规范）
+- **Axios**（可选）
+- **CSS / SCSS / Tailwind（可选）**
+
+---
+
+## 📦 功能模块（Roadmap）
+
+> 当前正在构建中（Week-by-Week 实践迭代）
+
+| 功能 | 状态 |
+|------|------|
+| 项目初始化（Vite + Vue3 + TS） | ✅ 完成 |
+| ESLint + Prettier 规范体系 | ✅ 完成 |
+| 基础路由搭建 | 🔧 开始中 |
+| Pinia 状态管理 | ⏳ 待开始 |
+| Layout 布局（侧边栏 + Header） | ⏳ 待开始 |
+| 登录模块 + 权限路由 | ⏳ 待开始 |
+| 通用组件（表格、分页、弹窗） | ⏳ 待开始 |
+| 后端 API 交互封装 | ⏳ 待开始 |
+
+---
+
+## 🖥️ 项目运行
 
 ```bash
-git clone git@github.com:Jiao-jiao1/vue3-cms.git
-```
-
-2. 安装依赖
-
-```bash
+# 安装依赖
 npm install
-```
 
-3. 本地启动项目
-
-```bash
+# 启动开发环境
 npm run dev
-```
+
+# 代码检查
+npm run lint
+
+# 构建生产包
+npm run build
+
+## 🖥️ 项目结构
+src/
+├── assets/        # 静态资源
+├── components/    # 页面级组件
+├── router/        # 路由配置
+├── store/         # Pinia store
+├── views/         # 页面
+├── App.vue        # 根组件
+└── main.ts        # 入口文件
