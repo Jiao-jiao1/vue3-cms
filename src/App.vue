@@ -1,9 +1,9 @@
-<script setup lang="ts">
-import HelloPage from './components/HelloPage.vue'
-</script>
-
 <template>
-  <HelloPage />
+  <div id="app">
+    <h1 class="text-center mt-4">Vue3 + Tailwind + Router</h1>
+    <router-view></router-view>
+    <!-- 这里用来显示当前的页面 -->
+  </div>
 </template>
 
-<style scoped></style>
+<script setup lang="ts"></script>
