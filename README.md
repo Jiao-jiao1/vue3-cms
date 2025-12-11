@@ -14,8 +14,8 @@
 - **Vue Router**
 - **Pinia**
 - **ESLint + Prettier**（代码规范）
-- **Axios**（可选）
-- **CSS / SCSS / Tailwind（可选）**
+- **Axios**
+- **Tailwind**
 
 ---
 
@@ -40,16 +40,16 @@
 
 ```bash
 # 安装依赖
-npm install
+pnpm install
 
 # 启动开发环境
-npm run dev
+pnpm run dev
 
 # 代码检查
-npm run lint
+pnpm run lint
 
 # 构建生产包
-npm run build
+pnpm run build
 
 ## 🖥️ 项目结构
 src/
