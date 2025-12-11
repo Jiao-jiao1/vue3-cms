@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 // 引入你的页面组件
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
+import UserProfile from '../views/UserProfile.vue'
 
 // 创建路由配置
 const routes = [
@@ -15,6 +16,11 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About,
+  },
+  {
+    path: '/user/:id', // 动态路由
+    name: 'UserProfile',
+    component: UserProfile,
   },
 ]
 
