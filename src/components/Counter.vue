@@ -16,7 +16,7 @@
       </button>
       <button
         @click="counter.reset"
-        class="mr-2.5 px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition"
+        class="px-6 py-3 bg-gray-500 text-white rounded-lg hover:bg-gray-600 transition"
       >
         重置
       </button>
